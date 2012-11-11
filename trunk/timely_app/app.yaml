@@ -1,4 +1,4 @@
-application: timely_app
+application: timely-app
 version: 1
 runtime: python27
 api_version: 1
@@ -9,9 +9,30 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: .*
+- url: /css/(.*)
+  static_files: static/css/\1
+  upload: static/css/(.*)
+  
+- url: /videos/(.*)
+  static_files: static/videos/\1
+  upload: static/videos/(.*)  
+  
+- url: /images/(.*)
+  static_files: static/images/\1
+  upload: static/images/(.*)    
+
+- url: /
   script: main.app
+  
+- url: /user/.*
+  script: new_user.app
+  
 
 libraries:
 - name: webapp2
   version: "2.5.1"
+- name: jinja2
+  version: "2.6"
+
+
+  

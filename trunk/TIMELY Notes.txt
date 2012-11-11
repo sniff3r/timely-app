@@ -1,0 +1,9 @@
+	- For the first application the following will not be implemented:
+		- Acess/Register with Facebook account
+		- No communication with Facebook
+		- No payment system
+	
+	- For the final application:
+		- All the jackpots will be stories on facebook, and we'll use the facebook structure to implement the likes and comments.
+		- Implement Paypal payment form
+		- HTML 5 Player

@@ -1,0 +1,354 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+body{
+	margin:0;
+	height:1500px;
+	background-color:#A5F7A0;
+
+	padding-top:50px;
+}
+
+#all{
+	width:100%;
+	margin: 40px auto 40px auto;
+	position:relative;
+}
+
+	#top{
+		top:0;
+		position:fixed;
+		width:100%;
+		height:50px;
+		z-index:15;
+
+		background-color: #002211;
+	}
+
+		#topContainer{
+			width:1080px;
+			height:100%;
+			margin: 0 auto;
+		}
+
+			#logo{
+				display:inline-block;
+				height:100%;
+				width: 35%;
+				vertical-align:top;
+				
+				font-family: "Open Sans Condensed", "serif";
+				font-size: 30px;
+				color:#FFF;
+			}
+
+			#thenumber{
+				background-color:#263;
+				vertical-align:middle;
+				font-size:17px;
+				border-radius:15px;
+				width:80px;
+				display:inline-block;
+				text-align:center;
+			}
+			#signup{
+				display:inline-block;
+				margin-left:50px;
+			}
+
+			.signupButton{
+				padding: 6px 20px;
+				border-radius:5px;
+				vertical-align:middle;
+				font-weight:bold;
+				text-decoration: none;
+				color:white;
+				letter-spacing:0.15em;
+				box-shadow:0px 0px 2px white inset;
+				text-shadow: 1px 0px gray;
+			}
+
+			.sigButSt1{
+				background-color:#FF8505;				
+				font-family:"Open Sans Condensed","sans-serif";
+				font-size:18px;
+			}
+
+			.sigButSt1:hover{
+				background-color:#FE9D38;				
+				font-family:"Open Sans Condensed","sans-serif";
+				font-size:18px;
+			}			
+
+			.sigButSt1:active{
+				box-shadow:2px 2px 1px #D66000 inset;
+				background-color:#FF8505;				
+				font-family:"Open Sans Condensed","sans-serif";
+				font-size:18px;
+			}						
+
+			.sigButSt2{
+				background-color:#0482FF;				
+				font-family:"Open Sans Condensed","sans-serif";
+				font-size:18px;
+			}	
+
+			.sigButSt2:hover{
+				background-color:#7ABCFF;				
+				font-family:"Open Sans Condensed","sans-serif";
+				font-size:18px;
+			}			
+
+			.sigButSt2:active{
+				box-shadow:2px 2px 1px #0054A8 inset;
+				background-color:#0482FF;				
+				font-family:"Open Sans Condensed","sans-serif";
+				font-size:18px;
+			}						
+
+			.sigButSt3{
+				background-color:#FF1E1E;				
+				font-family:"Open Sans Condensed","sans-serif";
+				font-size:18px;
+			}	
+
+			.sigButSt3:hover{
+				background-color:#FE7F7F;				
+				font-family:"Open Sans Condensed","sans-serif";
+				font-size:18px;
+			}			
+
+			.sigButSt3:active{
+				box-shadow:2px 2px 1px #D60000 inset;
+				background-color:#FF1E1E;				
+				font-family:"Open Sans Condensed","sans-serif";
+				font-size:18px;
+			}				
+
+			#menu{
+				display:inline-block;
+				width:64%;
+				height:100%;
+				text-align:right;				
+			}
+
+				.boxMenu{
+					position:relative;
+					display:inline-block;	
+					
+					width:30%;
+					height:100%;		
+
+					border-radius:5px;
+					padding:4px;
+					margin-top:5px;
+				}
+
+				.boxMenu input{
+					font-size: 13px;
+					font-family:"lato","sans-serif";
+
+					letter-spacing: 0.1em;
+					color:white;
+					background-color:#003d1e;
+					border-color:#021;
+					height:22px;
+					width:90%;
+				}
+
+#middle{
+	background-color:#FFF;
+	width: 65%;
+	height: 100%;
+	display:inline-block;
+
+	box-shadow: 0px 0px 1px #021;
+}
+
+#content{
+	width:1080px;
+	margin: 0 auto;
+}
+				
+.jackpotRow{
+	background-color:#FFF;
+	padding:20px;
+
+	width:640px;
+	height: 500px;
+	position:relative;
+}
+
+.jackpotTitle{
+	font-family:"Lato","sans-serif";
+	text-shadow:1px 1px lightgray;
+	font-size:22px;
+	margin-bottom:10px;
+}
+
+.jackpotCenter{
+	width: 640px;
+	height: 500px;
+}
+
+	.player{
+		width:640px;
+		margin:0 auto;
+		position:absolute;
+	}
+
+	.surveyBox{
+		padding: 0.1em;
+		border: 1px solid #AAA;
+		text-align:center;
+		background-color: #DDD;
+		
+		font-family: "Open Sans Condensed", sans-serif;
+		font-size: 15px;
+	}
+		
+
+	.jackpotRight{
+		display: inline-block;
+		width: 20%;
+		height: 500px;
+		padding:20px;
+		position:fixed;
+		background-color:white;
+
+		margin:0px 0px 0px 30px;		
+		box-shadow: 0px 0px 1px #021;
+	}
+
+	.jackpotSepLine{
+		margin:0 auto;
+		width:100%;
+		background-color:white;
+	}
+
+	.jackpotSepLine div{
+		height:3px;
+		width:100%;
+		background-color: lightgray;
+	}
+
+
+.videoMask{
+	background-color:#000;
+	opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */				
+	
+	position:absolute;
+	width:640px;
+	height:360px;
+	
+	bottom:0px;
+	left:0px;
+	
+	font-family: "Open Sans Condensed", sans-serif;
+	font-size: 30px;
+	text-align:center;
+}	
+	
+	.maskControl{
+		width:420px;
+		height:160px;
+		margin:90px auto;
+	}
+	
+	.maskControl label{
+		color:#FFF;
+	}
+	
+	.controlIcon{
+		background-image:url("/images/maskControls.png");
+	}
+	
+	.maskLeft{
+		width:150px;
+		height:150px;
+		display:inline-block;
+		float:left;
+	}
+	
+	.controlIconRight:hover{
+		background-position: 0px;
+	}
+	
+	.controlIconRight{
+		width:100%;
+		height:100%;
+		background-position: 300px;
+	}	
+	
+	.controlIconLeft:hover{
+		background-position: 450px;
+	}	
+	
+	.controlIconLeft{
+		width:100%;
+		height:100%;	
+		background-position: 150px;
+	}		
+	
+	
+	.maskRight{
+		width:150px;
+		height:150px;
+		display:inline-block;
+		float:right;	
+	}
+	
+	
+.comments{
+	width:100%;
+	margin:10px auto;
+	position:absolute;
+}
+	
+	.commentRow{
+		width:90%;
+		margin:0.2em auto;
+		background-color: #EEE;
+		padding: 0.4em;
+	}	
+
+#easySteps{
+	width: 100%;
+	height:270px;
+	background-color:#00c160;
+	box-shadow: 0px 1px 5px #021;
+}
+
+#easySteps div{
+	font-family: "Lato","sans-serif";
+	font-size:16px;
+	display: inline-block;
+	margin: 25px 3%;
+	padding: 1%;
+	width:23%;
+	height: 200px;
+
+	background-color: #00db6d;
+	border-radius:8px;
+	box-shadow:1px 1px 3px #231;
+	line-height: 1.5em;
+	text-align: center;
+	vertical-align:top;
+}
+
+#easySteps h1{
+	font-size:16px;
+	color:white;
+}
+
+em{
+	font-weight: bold;
+	font-size:18px;
+	color:#004221;
+}
+
+#bottom{
+	height:70px;
+	background-color:#021;
+}

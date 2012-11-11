@@ -1,0 +1,9 @@
+Background (gradient)
+	light gray 
+	light blue
+
+Colors: Green (Two types: One dark and one lighter)
+
+
+Menu (Background: Dark Gray (Paypal footer) )
+Orange, yellow for buttons
