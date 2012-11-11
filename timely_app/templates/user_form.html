@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title>User Form</title>		
+		<meta name="description" value="Timely is a..." />
+		<meta name="keywords" value="" />
+		<meta name="author" value="" />
+		<meta charset="utf-8" />
+	</head>
+	
+	<body>
+		{% if user %}
+			{{ user.us_name_st }}
+		{% elif username %}
+			{{ username }}
+		{% endif %}		
+
+		<br />
+		
+		<form id="formNewUser" enctype="application/x-www-form-urlencoded" method="post" action="" accept-charset="utf-8">
+			<label for="textUsername">Username:</label> 
+				<input type="text" id="textUsername" name="textUsername" required="required" /> <br />
+			<label for="emailEmail">Email:</label> 
+				<input type="email" id="emailEmail" name="emailEmail" required="required" /> <br />
+			<label for="passPassword">Password:</label> 			
+				<input type="password" id="passPassword" name="passPassword" required="required" /> <br />			
+		</form>
+		
+		<input type="submit" form="formNewUser" value="Submit" />
+	</body>
+</html>

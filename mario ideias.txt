@@ -1,0 +1,25 @@
+This is a list of some of the concepts we discussed and some others, tell me if you have any questions, if you want to add or change anything or whatever you want.
+-	Show commercials, with the option of winning money
+-	Our own player, which shows a disappearing frame that might say you are the winner (like the scratch cards)
+-	Two different jackpots, one which can be won by seeing the video, one which can be won with points.
+-	Option of putting a small survey of few questions in each video.
+-	Option of commenting the advertisement, and rating it (1 , 2 or 3 for example)
+-	Points are achieved by completing the survey, by rating the video and by how many likes you get on your comment up to a certain limit.
+-	Comments are separated into 2 different columns: best rated and newest. 
+-	Each video view (from a single user per day) will increase the video jackpot by 0.5 cent and the point jackpot by 0.5 cent (at the beginning)
+-	Each user can only view a video once a day to win money, he can view it more times per day but without being able to participate in the video jackpot.
+-	Keeping the user entertained by simple casino type games they can play with their points (double or nothing, maybe roulette..)
+-	There are different types of accounts, you can get upgraded by cumulating points. 
+-	Site display is user-friendly, similar to 9gag 
+-	They can sign up with google or facebook. 
+- Can be translated to Portuguese lol french and spanish.
+Use texttexttexttextextextext or whatever for the space in which we would have to put text. I would start writing the text necessary and traducing everything as soon as we have a small preview.
+Try to code and make a shitty design for the beggining I'll seeing if I can convince a web designer.
+Let's do this! haha
+
+
+
+
+
+Tiimely is a company that links advertisers to its customers. While advertising is a necessary tool for almost every business, we feel it isn't approached in the correct way. Ads are all around us, in the streets, the TV, Internet and so on. One common characteristic of almost all of them is that they are usually annoying to the receptor. The reason for this we believe is not that people don't like ads (since most of them are entertaining, visually attractive and may provide useful information) but that the ads aren't placed in a pleasant location to the audience, or aren't showed in a timely manner. Even if a person loves tennis, he probably wouldn't want to be forced to see a ball exchange in the middle of a movie he is watching, but he would definitely watch exchanges at another time. We believe this can be true as well with advertisements. 
+Tiimely is set to create a platform where users can come and see the advertisements they want, when they want. We also want them to have fun while doing so, offering them a set of different features to play with. Most importantly, we offer them the possibility of winning huge amounts of money. As for the advertisers, in our website they will find many different means of reaching the customer in a cheap, reliable and brand-building way.
