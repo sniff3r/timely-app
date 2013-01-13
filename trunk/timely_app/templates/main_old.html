@@ -1,0 +1,85 @@
+{% extends "/templates/base.html" %}
+
+{% block title %}Timely{% endblock %}
+
+{% block head %}
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="/js/video.js"></script>
+	<script src="/js/sideMenu.js"></script>	
+
+{% endblock %}
+
+{% block content %}
+	<div id="middle">			
+		<div class="jackpotRow">	
+			<div class="jackpotCenter">
+				<div class="jackpotTitle">
+					Advertisement Title
+				</div>
+				<div class="player">
+					<video width="640" id="meuVideo" height="360" controls="controls" onEnded="endVideo">
+						<source src="videos/mp4/mov_bbb.mp4" type="video/mp4">
+						<source src="videos/ogg/mov_bbb.ogg" type="video/ogg">
+					</video>
+
+					<div class="comments">
+						<div class="commentRow">
+							<span>My comment about the video...</span>
+							<a href="">Like</a>
+						</div>
+						
+						<div class="commentRow">
+							<span>My comment about the video...</span>
+							<a href="">Like</a>
+						</div>								
+					</div>								
+				</div>
+											
+			</div>
+			
+		</div>
+
+		<div class="jackpotSepLine"><div></div></div>
+
+		<div class="jackpotRow">	
+			<div class="jackpotCenter">
+				<div class="jackpotTitle">
+					Advertisement Title
+				</div>
+				<div class="player">
+					<video width="640" id="meuVideo" height="360" controls="controls" onEnded="endVideo">
+						<source src="videos/mp4/mov_bbb.mp4" type="video/mp4">
+						<source src="videos/ogg/mov_bbb.ogg" type="video/ogg">
+					</video>
+
+					<div class="comments">
+						<div class="commentRow">
+							<span>My comment about the video...</span>
+							<a href="">Like</a>
+						</div>
+						
+						<div class="commentRow">
+							<span>My comment about the video...</span>
+							<a href="">Like</a>
+						</div>								
+					</div>
+
+				</div>
+											
+			</div>
+			
+		</div>
+
+	</div>
+
+	<div class="jackpotRight">
+		<a class="signupButton sigButSt1" href="#">Empty Area</a>
+		<br /><br />
+		<a class="signupButton sigButSt2" href="#">Empty Area</a>
+		<br /><br />
+		<a class="signupButton sigButSt3" href="#">Empty Area</a>						
+	</div>	
+{% endblock %}
+
+{% block bottom %}{% endblock %}

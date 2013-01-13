@@ -13,6 +13,12 @@ class Comment(db.Model):
 	cm_jackpot = db.IntegerProperty(required=True)	#TODO: Change to ReferenceProperty
 	cm_comment = db.TextProperty(required=True)
 	
+class Video(db.Model):
+	vd_title = db.StringProperty(required=True)
+	vd_link = db.StringProperty(required=True)
+	vd_priority = db.IntegerProperty(required=False)
+	vd_date = db.DateTimeProperty(required=True,auto_now_add=True)
+
 	
 
 
