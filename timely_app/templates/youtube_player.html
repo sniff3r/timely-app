@@ -1,0 +1,158 @@
+<html>
+  <head>
+
+	<link rel="stylesheet" href="/css/bootstrap.css"></link>
+	<link rel="stylesheet" href="/css/bootstrap-responsive.css"></link>
+	<script src="/js/bootstrap.js"></script>
+
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="/js/yt_video.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      google.load("swfobject", "2.1");
+    </script>    
+
+    <script type="text/javascript">
+		var vc = new VideoControl();
+
+		function onYouTubePlayerReady(pId) {
+			vc.playerReady(pId);
+			vc.loadVideo(pId,"4s-fw8GHL_s");
+
+			/*This make the big play button to vanish*/
+			vc.playVideo(pId);
+			vc.pauseVideo(pId);
+		}
+
+		function _run() {
+			vc.createVideo(document.getElementById("all"));			
+		}
+
+		google.setOnLoadCallback(_run);		
+
+    </script>
+
+
+    <style>
+
+    	body{
+    		padding-top:30px;
+    		padding-left:20px;
+    	}
+
+    	.divTimeRemaining{
+    		display:inline-block;
+    		background-color:red;
+    		width:100%;
+    		height:8px;
+    	}
+
+    	.divTimeElapsed{
+			display:inline-block;
+			background-color:green;
+			width:0%;
+			height:8px;
+			position:relative;
+			top:-8px;
+    	}
+
+    	/*
+    	#allComments{
+    		width: 640px;
+    	}
+
+    	#topRatedComment{
+    		width: 100%;
+    		height: 60px;
+
+    		background-color: #DDD;
+    		border-radius: 2px 0px 2px 0px;
+    		box-shadow: #AAA 1px -1px 1px 0, #AAA -1px 1px 1px;
+
+    		margin-bottom:20px;
+    	}
+
+    	.otherComments{
+    		width: 100%;
+    		height: 40px;
+
+    		background-color: #DDD;
+    		border-radius: 2px 0px 2px 0px;
+    		box-shadow: #AAA 1px -1px 1px 0, #AAA -1px 1px 1px;
+
+    		margin-bottom: 12px;
+    	}
+
+		blockquote{
+			border-left: 5px solid white !important;
+		}
+
+		.likesComment{
+			position:relative;
+			top:25px;
+			text-align:right;
+		}
+
+		.textComment{
+			padding: 5px 5px 5px 5px;
+		}    	
+		*/
+
+    </style>
+
+  </head>
+
+  <body style="font-family: Arial;border: 0 none;">
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=272121109581537";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>  	
+
+  	<div id="all">
+
+  	</div>
+
+	<div class="fb-comments" data-href="http://ads-tv.appspot.com" data-width="640" data-num-posts="2"></div>  	
+
+  	<div id="allComments">
+  		
+  		<!--
+  		<div id="topRatedComment">
+  			<div class="textComment container-fluid">
+  				<div class="row-fluid">
+	  				<div class="span10">
+		  				<blockquote>
+		  					<p>This ad is really funny, I love it!</p>
+		  					<small>tbone_0715</small>
+		  				</blockquote>
+		  			</div>
+
+		  			<div class="likesComment span2">
+		  				3 likes
+		  			</div>		  			
+	  			</div>
+
+	  		</div>
+  		</div>
+
+  		<div class="otherComments">
+  			<div class="textComment"></div>
+  			<div class="likesComment"></div>
+  		</div>
+
+  		<div class="otherComments">
+  			<div class="textComment"></div>
+  			<div class="likesComment"></div>
+  		</div>
+		-->
+	</div>
+		
+
+  </body>
+</html>

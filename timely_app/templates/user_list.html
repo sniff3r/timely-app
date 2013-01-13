@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title>User List</title>		
+		<meta name="description" value="Timely is a..." />
+		<meta name="keywords" value="" />
+		<meta name="author" value="" />
+		<meta charset="utf-8" />
+	</head>
+	
+	<body>
+		{{list_users}}
+		<table style="width:100%">	
+			<thead>
+				<td>Username</td>
+				<td>Email</td>
+				<td>Password</td>
+			</thead>
+			
+			<tbody>			
+			
+			{% for user in list_users %}
+				<tr>
+					<td>{{user.us_name_st}}</td>
+					<td>{{user.us_email_st}}</td>
+					<td>{{user.us_password_st}}</td>
+				</tr>	
+			{% endfor %}
+			</tbody>
+		</table>
+	</body>
+</html>

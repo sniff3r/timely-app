@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title>Video Form</title>		
+		<meta name="description" value="Timely is a..." />
+		<meta name="keywords" value="" />
+		<meta name="author" value="" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+		<link rel="stylesheet" href="/css/bootstrap.css"></link>
+		<link rel="stylesheet" href="/css/bootstrap-responsive.css"></link>
+		<script src="/js/bootstrap.js"></script>
+
+	    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	    <script type="text/javascript">
+	      google.load("swfobject", "2.1");
+	    </script>    
+
+		<script type="text/javascript">
+			function onYouTubePlayerReady(pId) {
+
+			}
+
+			function _run() {
+				var params = { allowScriptAccess: "always" };
+				var atts = { id: "ytplayer" };
+
+				swfobject.embedSWF("http://www.youtube.com/apiplayer?" +
+				                   "version=3&enablejsapi=1&playerapiid=1", 
+				                   "divVideo", 480, 295, "9", null, null, params, atts);		
+			}
+
+			function checkVideo(){
+				var patt = /(http:\/\/)?\w\w\w\.[a-z]+\.[a-z]/;
+				var link = document.getElementById("txtLink").value;
+				var ytplayer = document.getElementById("ytplayer");
+				
+				if( patt.test(link) ){
+					link = link.split("v=")[1];
+					ytplayer.cueVideoById(link);					
+				}
+				else{
+					ytplayer.cueVideoById(link);					
+				}
+			}
+
+			google.setOnLoadCallback(_run);				
+		</script>
+
+		<style>
+			body{
+				padding-top:40px;
+			}
+		</style>	
+
+	</head>
+	
+	<body>
+
+		{% if video_ctx %}
+			{% if not video_ctx.sucess_flag %}
+				<p>Priority Field MUST be an Integer between 1 and 5</p>
+			{% else %}
+				<p>Video Registered</p>
+			{% endif %}
+		{% endif %}
+
+		<div class="container-fluid">
+			
+			<div class="row-fluid">	
+				<div class="span8">
+					<div id="divVideo"></div>
+				</div>
+
+				<div class="span4">
+					<form id="formNewVideo" enctype="application/x-www-form-urlencoded" method="post" action="" accept-charset="utf-8">
+						<label for="txtLink">Title:</label> 
+							<input type="text" id="txtTitle" name="txtTitle" required="required" /> <br />
+						<label for="txtLink">Link or VideoId:</label> 
+							<input type="text" id="txtLink" name="txtLink" required="required" onblur="checkVideo()" /> <br />
+							
+						<label for="txtPriority">Priority (1-5):</label> 			
+							<input type="text" id="txtPriority" name="txtPriority" required="required" /> <br />			
+					</form>
+				
+					<button type="submit" class="btn btn-primary" form="formNewVideo">Send Video</button> 
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title>User List</title>		
+		<meta name="description" value="Timely is a..." />
+		<meta name="keywords" value="" />
+		<meta name="author" value="" />
+		<meta charset="utf-8" />
+	</head>
+	
+	<body>
+		<table style="width:100%">	
+			<thead>
+				<td>Title</td>
+				<td>Link</td>
+				<td>Priority</td>
+				<td>Date</td>
+			</thead>
+			
+			<tbody>			
+
+			{% for video in list_videos %}
+				<tr>
+					<td>{{video.vd_title}}</td>
+					<td>{{video.vd_link}}</td>
+					<td>{{video.vd_priority}}</td>
+					<td>{{video.vd_date}}</td>
+				</tr>	
+			{% endfor %}
+			</tbody>
+		</table>
+	</body>
+</html>
