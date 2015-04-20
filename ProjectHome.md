@@ -1,0 +1,1 @@
+A new way to present advertisement for users.
